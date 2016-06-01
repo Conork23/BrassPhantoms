@@ -10,7 +10,7 @@
 <meta name="author" content="">
 
 <title>Brass Phantoms</title>
-
+<link rel='shortcut icon' href="{% static 'band/img/favicon.jpg' %}" type='image/x-icon'/ >
 <!-- Bootstrap Core CSS -->
 <link rel="stylesheet" href="{% static 'band/css/bootstrap.min.css' %}" type="text/css">
 
@@ -54,13 +54,13 @@
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
             <li>
-                <a class="page-scroll" href="/#about">Gigs</a>
+                <a class="page-scroll" href="#about">Gigs</a>
             </li>
             <li>
-                <a class="page-scroll" href="/#services">Merch</a>
+                <a class="page-scroll" href="#services">Merch</a>
             </li>
             <li>
-                <a class="page-scroll" href="/#contact">Contact</a>
+                <a class="page-scroll" href="#contact">Contact</a>
             </li>
             <li >
                 <a class="ff" href='#'><i class="fa fa-facebook-square"></i></a>
@@ -68,8 +68,8 @@
             <li >
                 <a class="fi" href='#'><i class="fa fa-instagram"></i></a>
             </li>
-            <li >
-                <a class="ft" href='#'><i class="fa fa-twitter-square"></i></a>
+            <li class="last" >
+                <a class="ft" href='https://twitter.com/BrassPhantoms'><i class="fa fa-twitter-square"></i></a>
             </li>
 
         </ul>
@@ -83,6 +83,7 @@
 
 {% endblock content %}
 
+{% include 'band/includes/footer.html' %}
 <!-- jQuery -->
 <script src="{% static 'band/js/jquery.js' %}"></script>
 
