@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<div class="allAlbums">
+			<center>
+            <h2 class="primary">Albums</h2>
+            <hr class="primary">
+            </center>
+	<div class="row">
+		
+		{% for a in album %}
+			
+		<div class="col col-md-3 album">
+			<div class="imgContainer">
+			<div class="underlay"></div>
+				<a href="{{ a.buyLink }}" target="_blank">
+					<div class="overlay">
+						<h2 class="buylbl">Listen</h2>
+					</div>
+				</a>
+				<a href="{{ a.buyLink }}" target="_blank">
+					<div class="overlay overlayBottom">
+						<h2 class="buylbl">Buy Now</h2>
+					</div>
+				</a>
+				<img  class="albumImg" src="{{ a.url }}"/>
+			</div>
+		</div>
+
+		{% endfor %}
+		</div></div>

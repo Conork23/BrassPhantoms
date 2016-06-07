@@ -501,3 +501,47 @@ body {
   width: 100%;
   height: 100%;
 }
+.allAlbums {
+  margin: 60px 20px 10px 20px;
+}
+.allAlbums .album {
+  padding: 0px 8px 16px 8px;
+}
+.allAlbums .album .imgContainer {
+  position: relative;
+}
+.allAlbums .album .imgContainer:hover .underlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #FFEF00;
+  opacity: 0.3;
+}
+.allAlbums .album .imgContainer .overlay {
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+}
+.allAlbums .album .imgContainer .overlay h2 {
+  position: absolute;
+  font-size: 2em;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  color: black;
+  font-weight: bolder;
+}
+.allAlbums .album .imgContainer .overlay.overlayBottom {
+  top: 50%;
+}
+.allAlbums .album .imgContainer .overlay:hover {
+  background-color: #FFEF00;
+  opacity: 0.4;
+}
+.allAlbums .album .imgContainer .albumImg {
+  width: 100%;
+}

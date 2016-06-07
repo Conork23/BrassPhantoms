@@ -10,3 +10,12 @@ class Video(models.Model):
 
 	def __unicode__(self):
 		return self.title
+
+class Album(models.Model):
+	title = models.CharField(max_length=150)
+	url = models.CharField(max_length=150)
+	buyLink = models.CharField(max_length=150)
+
+	def __unicode__(self):
+		return self.title
+
