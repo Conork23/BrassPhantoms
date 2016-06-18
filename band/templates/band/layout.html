@@ -16,6 +16,7 @@
 
 <!-- Custom Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{% static 'band/font-awesome/css/font-awesome.min.css' %}" type="text/css">
 
@@ -53,14 +54,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
+        {% comment %}
             <li>
                 <a class="page-scroll" href="#about">Gigs</a>
             </li>
+        {% endcomment %}
             <li>
                 <a class="page-scroll" href="/merch">Merch</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#contact">Contact</a>
             </li>
             <li >
                 <a class="ff" href='https://www.facebook.com/officialriff/' target="_blank"><i class="fa fa-facebook-square"></i></a>
@@ -97,6 +97,12 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="{% static 'band/js/creative.js' %}"></script>
+
+<script type="text/javascript"></script>
+
+<script type="text/javascript">
+(function(d,s,id){var z=d.createElement(s);z.type="text/javascript";z.id=id;z.async=true;z.src="//static.zotabox.com/2/8/28c3bbe11c15b90e5bb703e04b3c426e/widgets.js";var sz=d.getElementsByTagName(s)[0];sz.parentNode.insertBefore(z,sz)}(document,"script","zb-embed-code"));
+</script>
 
 </body>
 

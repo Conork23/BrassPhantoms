@@ -14,17 +14,29 @@
 			<div class="underlay"></div>
 				<a href="{{ a.buyLink }}" target="_blank">
 					<div class="overlay">
-						<h2 class="buylbl">Listen</h2>
+						<h2 class="buylbl primary">Buy Now</h2>
 					</div>
 				</a>
-				<a href="{{ a.buyLink }}" target="_blank">
+				<a id="l_{{ a.id }}" class="listenBtn" href="">
 					<div class="overlay overlayBottom">
-						<h2 class="buylbl">Buy Now</h2>
+						<h2 class="buylbl primary">Listen</h2>
 					</div>
 				</a>
-				<img  class="albumImg" src="{{ a.url }}"/>
+				<img  class="albumImg" src="{{ a.imageLink }}"/>
+			</div>
+
+			<div  id="p_{{ a.id }}" class="albumPlayer">
+				
+				{{ a.listenLink | safe }}
+
 			</div>
 		</div>
 
 		{% endfor %}
-		</div></div>
+		</div>
+
+	</div>
+
+
+
+

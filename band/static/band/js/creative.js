@@ -45,6 +45,16 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
+    $(".listenBtn").click(function(event){
+        var id = (event.currentTarget.id).slice(2);
+
+        console.log(id);
+
+        $(".albumPlayer#p_"+id).slideToggle( "fast", function() {
+            console.log("slide ??");
+  });
+        return false;
+    });
 
 })(jQuery); // End of use strict
 

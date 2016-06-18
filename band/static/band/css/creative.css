@@ -38,6 +38,9 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+h2.primary {
+  font-family: Lobster;
+}
 p {
   font-size: 16px;
   line-height: 1.5;
@@ -529,7 +532,7 @@ body {
 .allAlbums .album .imgContainer .overlay h2 {
   position: absolute;
   font-size: 2em;
-  top: 25%;
+  top: 40%;
   left: 25%;
   right: 25%;
   color: black;
@@ -544,4 +547,7 @@ body {
 }
 .allAlbums .album .imgContainer .albumImg {
   width: 100%;
+}
+.allAlbums .album .albumPlayer {
+  display: none;
 }
